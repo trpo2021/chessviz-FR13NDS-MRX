@@ -1,2 +1,4 @@
-bin/chess
+bin/*
 obj/*
+*.o
+*.a
