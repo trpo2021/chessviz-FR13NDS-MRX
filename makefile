@@ -28,3 +28,4 @@ all: bin/chess
 clean:
 	rm obj/src/*/*.o
 	rm bin/chess
+	rm obj/src/libchessviz/libchessviz.a
