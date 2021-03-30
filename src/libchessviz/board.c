@@ -56,4 +56,6 @@ int fillBoard(char board[][9])
     board[8][6] = 'b';
     board[8][7] = 'n';
     board[8][8] = 'r';
+
+    return 0;
 }

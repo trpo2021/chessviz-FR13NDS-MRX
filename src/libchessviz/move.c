@@ -1,4 +1,4 @@
-include <libchessviz/move.h>
+#include <libchessviz/move.h>
 #include <stdio.h>
 
 int move(char board[][9], char moveChess[])
@@ -12,8 +12,8 @@ int move(char board[][9], char moveChess[])
     	return 2;
     }
 
-    j = chessMove[0] - '`';
-    i = chessMove[1] - '0';
+    j = moveChess[0] - '`';
+    i = moveChess[1] - '0';
 
     if (board[i][j] == 32) {
         return 1;
@@ -26,4 +26,6 @@ int move(char board[][9], char moveChess[])
     i = moveChess[4] - '0';
     
     board[i][j] = t;
+
+    return 0;
 }

@@ -13,10 +13,10 @@ int main()
     fillBoard(board);
     printBoard(board);
 
-    cout << "Move example: e2-e4" << endl << "Type 0 to exit program";
+    printf("Move example: e2-e4 \nType 0 to exit program");
 
     while (1) {
-        cout << endl << "Type a move: ";
+        printf("\nType a move: ");
         readBoard(moveChess);
 
         check = move(board, moveChess);
@@ -27,10 +27,12 @@ int main()
         }
 
         if (check == 2) {
-            cout << "\n\n" << "Exiting program" << endl;
+            printf("\n\nExiting program\n");
             break;
         }
 
         printBoard(board);
     }
+
+    return 0;
 }

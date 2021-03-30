@@ -1,9 +1,9 @@
-#include <libchessbiz/board_print_plain.h>
+#include <libchessviz/board_print_plain.h>
 #include <stdio.h>
 
 int printBoard(char board[][9])
 {
-	cout << endl;
+	printf("\n");
 	
 	for (int i = 9; i > -1; i--)
 	{
@@ -11,15 +11,16 @@ int printBoard(char board[][9])
 		{
 			if (board[i][j] == 0)
 			{
-				desk[i][j] = 32;
+				board[i][j] = 32;
 			}
 			
-			cout << board[i][j];
-			cout.width(4);
+			printf("%4c", board[i][j]);
 		}
 		
-		cout << endl;
+		printf("\n");
 	}
 	
-	cout << "\n-" << board[0][0] << "-\n";
+	printf("\n-%d-\n", board[0][0]);
+
+    return 0;
 }
