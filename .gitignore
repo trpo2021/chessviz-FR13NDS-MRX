@@ -1,2 +1,4 @@
-chess.exe
-*~
+bin/chess
+obj/*
+*.o
+*.a
