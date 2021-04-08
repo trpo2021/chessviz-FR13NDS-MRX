@@ -6,10 +6,9 @@ int move(char board[][9], char moveChess[])
     int i, j;
     char t;
 
-    for (i = 0; i < 11; i++)
-    {
-    	if (moveChess[i] == '0')
-    	return 2;
+    for (i = 0; i < 11; i++) {
+        if (moveChess[i] == '0')
+            return 2;
     }
 
     j = moveChess[0] - '`';
@@ -24,7 +23,7 @@ int move(char board[][9], char moveChess[])
 
     j = moveChess[3] - '`';
     i = moveChess[4] - '0';
-    
+
     board[i][j] = t;
 
     return 0;

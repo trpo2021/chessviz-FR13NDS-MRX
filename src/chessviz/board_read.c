@@ -3,7 +3,6 @@
 
 int readBoard(char moveChess[])
 {
-
     scanf("%s", moveChess);
     printf("\n%s\n", moveChess);
 
