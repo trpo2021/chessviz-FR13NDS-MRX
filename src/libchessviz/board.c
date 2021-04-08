@@ -1,6 +1,6 @@
-#include <libchessviz/board.h>
+F #include<libchessviz / board.h>
 
-int fillBoard(char board[][9])
+        int fillBoard(char board[][9])
 {
     board[0][0] = 32;
     board[0][1] = 'a';
@@ -22,8 +22,7 @@ int fillBoard(char board[][9])
     board[1][8] = 'R';
     board[2][0] = '2';
 
-    for (int i = 1; i < 9; i++)
-    {
+    for (int i = 1; i < 9; i++) {
         board[2][i] = 'P';
     }
 
@@ -32,18 +31,15 @@ int fillBoard(char board[][9])
     board[5][0] = '5';
     board[6][0] = '6';
 
-    for (int i = 3; i < 6; i++) 
-    {
-        for (int j = 1; j < 9; j++) 
-        {
+    for (int i = 3; i < 6; i++) {
+        for (int j = 1; j < 9; j++) {
             board[i][j] = 32;
         }
     }
 
     board[7][0] = '7';
 
-    for (int i = 1; i < 9; i++) 
-    {
+    for (int i = 1; i < 9; i++) {
         board[7][i] = 'p';
     }
 
