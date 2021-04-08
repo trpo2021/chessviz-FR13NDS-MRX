@@ -1,6 +1,6 @@
-F #include<libchessviz / board.h>
+#include <libchessviz/board.h>
 
-        int fillBoard(char board[][9])
+int fillBoard(char board[][9])
 {
     board[0][0] = 32;
     board[0][1] = 'a';
